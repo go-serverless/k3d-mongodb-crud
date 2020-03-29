@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  k3d-mongodb-crud:
+    lang: golang-middleware
+    handler: ./k3d-mongodb-crud
+    image: wingkwong/k3d-mongodb-crud:latest
+    environment:
+      mongo_host: mongodb.default.svc.cluster.local:27017
+      mongo_database: k3d-mongodb-crud
+      mongo_collection: foo
+      write_debug: true
+      combine_output: false
+    secrets:
+    - mongo-db-username
+    - mongo-db-password
