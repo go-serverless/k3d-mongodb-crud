@@ -4,7 +4,7 @@ Building Serverless CRUD services in Go with OpenFaaS, Arkade, MongoDB and k3d
 
 > This is just a learning playground
 
-Check out the blog post [here](https://dev.to/wingkwong/building-serverless-crud-services-in-go-with-openfaas-arkade-mongodb-and-k3d-1d93)
+Check out the blog post [here](https://wingk-wong.blogspot.com/2020/03/building-serverless-crud-services-in-go_29.html)
 
 ### Create
 ```
